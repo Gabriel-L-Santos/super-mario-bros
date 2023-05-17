@@ -1,6 +1,9 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
-const soundtrack = document.getElementById('soundtrack');
+
+// Reproduz o som da fase
+const level = document.getElementById('level');
+level.play();
 
 const jump = () => {
     mario.classList.add('jump');
@@ -31,6 +34,12 @@ const loop = setInterval(() => {
         mario.style.bottom = `${marioPosition}px`;
 
         mario.src = './assets/images/game-over.png';
+
+        // Reproduz som de game over
+        const gameover = document.getElementById('gameover');
+        gameover.play();
+        level.pause();
+
         mario.style.width = '75px';
         mario.style.marginLeft = '50px';
 
