@@ -14,6 +14,12 @@
     background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
+.footer {
+    height: 34vh;
+    background: rgb(223,102,15);
+    background: linear-gradient(0deg, rgba(223,102,15,1) 86%, rgb(35, 160, 35) 90%);
+}
+
 .pipe {
     position: absolute;
     bottom: 0;
